@@ -1,0 +1,56 @@
+﻿{% include header %}
+
+
+<h2>You have found our balloon!</h2>
+
+<p>Congratulations! Although we live on a densely populated continent, the odds of finding a small solar balloon are in fact very slim. Please fill out the form below and help us locate where our balloon landed.<p>
+<p>&nbsp;<p>
+<p>
+<form method="post" action="founddone" accept-charset="utf8">
+<table>
+<tr valign="top">
+<td>
+<span class="emph">Date</span>
+<div class="desc">
+Please enter the date and possibly time when you found the balloon
+</div>
+</td>
+<td><input type="text" name="Date" size="50"></td>
+</tr>
+<tr valign="top">
+<td>
+<span class="emph">Location</span>
+<div class="desc">
+Where did you find the balloon? Enter at least country and city name. If you have GPS coordinates, include them too.
+</div>
+</td>
+<td><textarea name="Location" rows=5 cols="40"></textarea></td>
+</tr>
+<tr valign="top">
+<td>
+<span class="emph">Description</span>
+<div class="desc">
+What was the state of the balloon when you found it? Was it hanging from a tree, or washed down by a river? Tell us the story.<br>
+If the code of the postcard was readable, type it in.
+</div>
+</td>
+<td><textarea name="Desc" rows=5 cols="40"></textarea></td>
+</tr>
+<tr valign="top">
+<td>
+<span class="emph">Contact</span>
+<div class="desc">
+How can we contact you? E-mail, phone number, skype name - type in anything you feel comfortable with
+</div>
+</td>
+<td><input type="text" name="Contact" size="50"></td>
+</tr>
+<tr align="right">
+<td colspan="2"><input type="submit" name="OK" value="Submit"></td>
+</tr>
+</table>
+</form>
+</p>
+
+
+{% include footer %}

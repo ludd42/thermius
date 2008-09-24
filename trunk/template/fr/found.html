@@ -1,0 +1,56 @@
+﻿{% include header %}
+
+
+<h2>Vous avez trouvé notre ballon!</h2>
+
+<p>Félicitations! Bien que nous vivions sur un continent densément peuplé, les chances de trouver un petit ballon solaire sont en fait très minces!  Merci de remplir le formulaire ci-dessous, afin de nous aider à localiser le lieu d'atterrissage de notre ballon.<p>
+<p>&nbsp;<p>
+<p>
+<form method="post" action="founddone" accept-charset="utf8">
+<table>
+<tr valign="top">
+<td>
+<span class="emph">Date</span>
+<div class="desc">
+Veuillez entrer la date et éventuellement l'heure à laquelle vous avez trouvé le ballon.
+</div>
+</td>
+<td><input type="text" name="Date" size="50"></td>
+</tr>
+<tr valign="top">
+<td>
+<span class="emph">Lieu</span>
+<div class="desc">
+Où avez-vous trouvé le ballon? Entrez au moins le pays et le nom de la ville. Si vous avez les coordonnées GPS, donnez-les aussi.
+</div>
+</td>
+<td><textarea name="Location" rows=5 cols="40"></textarea></td>
+</tr>
+<tr valign="top">
+<td>
+<span class="emph">Description</span>
+<div class="desc">
+Quel était l'état du ballon lorsque vous l'avez trouvé? A-t-il été trouvé dans un arbre, dans une rivière? Merci de préciser les circonstances. <br>
+Si le code d'identité du ballon, mentionné sur la carte postale, est lisible, notez-le.
+</div>
+</td>
+<td><textarea name="Desc" rows=5 cols="40"></textarea></td>
+</tr>
+<tr valign="top">
+<td>
+<span class="emph">Contact</span>
+<div class="desc">
+Comment pouvons-nous vous contacter? E-mail, numéro de téléphone, Skype, ...
+</div>
+</td>
+<td><input type="text" name="Contact" size="50"></td>
+</tr>
+<tr align="right">
+<td colspan="2"><input type="submit" name="OK" value="Envoyer"></td>
+</tr>
+</table>
+</form>
+</p>
+
+
+{% include footer %}
