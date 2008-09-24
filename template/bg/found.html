@@ -1,0 +1,56 @@
+﻿{% include header %}
+
+
+<h2>Ако сте намерили балона ни ...</h2>
+
+<p>Поздравления! Въпреки, че живеем в гъсто населения континент Европа, шансовете да се намери един малък балон са всъщност много слаби. Моля, попълнете формуляра по-долу, за да ни помогнете да открием къде и кога нашият балон е кацнал.<p>
+<p>&nbsp;<p>
+<p>
+<form method="post" action="founddone" accept-charset="utf8">
+<table>
+<tr valign="top">
+<td>
+<span class="emph">Дата</span>
+<div class="desc">
+Моля, въведете датата и евентуално часа, когато сте намерили балона.
+</div>
+</td>
+<td><input type="text" name="Date" size="50"></td>
+</tr>
+<tr valign="top">
+<td>
+<span class="emph">Място</span>
+<div class="desc">
+Къде сте намерили балона? Въведете поне държавата и името на града. Ако имате GPS координати, запишете ги.
+</div>
+</td>
+<td><textarea name="Location" rows=5 cols="40"></textarea></td>
+</tr>
+<tr valign="top">
+<td>
+<span class="emph">Описание</span>
+<div class="desc">
+В какво състояние беше балона, когато го открихте? Висеше на някое дърво или плуваше в реката? Моля, разкажете.<br>
+Ако имате кода от картичката, въведете го.
+</div>
+</td>
+<td><textarea name="Desc" rows=5 cols="40"></textarea></td>
+</tr>
+<tr valign="top">
+<td>
+<span class="emph">Контакт</span>
+<div class="desc">
+Как можем да се свържем с вас? Електронна поща, телефонен номер, skype - както ви е удобно.
+</div>
+</td>
+<td><input type="text" name="Contact" size="50"></td>
+</tr>
+<tr align="right">
+<td colspan="2"><input type="submit" name="OK" value="Изпрати"></td>
+</tr>
+</table>
+</form>
+</p>
+
+
+{% include footer %}

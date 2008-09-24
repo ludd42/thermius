@@ -1,0 +1,59 @@
+﻿{% include header %}
+
+<script LANGUAGE="JavaScript">
+<!--
+function conDel()
+{
+var agree=confirm("Really delete the flight?");
+if (agree)
+	return true ;
+else
+	return false ;
+}
+// -->
+</script>
+
+<h2>List of flights</h2>
+<table>
+<tr class="emph">
+<td>Balloon Name</td><td>Date launched</td><td>Launch Location</td><td>Date Found</td><td>Location Found</td><td>Distance Covered</td><td>URL</td>
+</tr>
+{% for flight in flights %}
+<tr>
+<td>
+{{ flight.name }}
+</td>
+<td>
+{{ flight.date_launch|date:"d/n/Y H:i" }}
+</td>
+<td>
+{{ flight.location_launch }}
+</td>
+<td>
+{{ flight.date_landed|date:"d/n/Y H:i" }}
+</td>
+<td>
+{{ flight.location_landed }}
+</td>
+<td>
+{{ flight.distance|default_if_none:"" }}
+</td>
+<td>
+{{ flight.notes }}
+</td>
+<td>
+<form method="get" action="/admin/edit">
+	<input type="hidden" name="Key" value="{{ flight.key }}">
+	<input type="submit" name="Edit" value="Edit">
+	<input type="submit" name="Delete" value="Delete" onClick="return conDel()">
+</form>
+</td>
+</tr>
+{% endfor %}
+</table>
+<form method="get" action="/admin/add">
+	<input type="submit" name="Add" value="Add">
+</form>
+
+
+{% include footer %}

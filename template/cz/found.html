@@ -1,0 +1,56 @@
+﻿{% include header %}
+
+
+<h2>Našli jste jeden z našich balónů?</h2>
+
+<p>Gratulujeme! Ačkoli Evropa je hustě obydlený kontinent, pravděpodobnost nálezu malého balónu vypuštěného daleko od místa přistání je ve skutečnosti velmi nízká. Vyplňte prosím formulář níže, abychom se dozvěděli kdy, kde a jakém stavu jste balón našli. Děkujeme.</p>
+<p>&nbsp;<p>
+<p>
+<form method="post" action="founddone" accept-charset="utf8">
+<table>
+<tr valign="top">
+<td>
+<span class="emph">Datum nálezu</span>
+<div class="desc">
+Uveďte datum a pokud možno i čas, kdy jste balón našli
+</div>
+</td>
+<td><input type="text" name="Date" size="50"></td>
+</tr>
+<tr valign="top">
+<td>
+<span class="emph">Místo nálezu</span>
+<div class="desc">
+Kde jste balón našli? Uveďte alespoň stát a město. Pokud jste změřili GPS souřadnice, uveďte je také.
+</div>
+</td>
+<td><textarea name="Location" rows=5 cols="40"></textarea></td>
+</tr>
+<tr valign="top">
+<td>
+<span class="emph">Popis</span>
+<div class="desc">
+V jakém stavu byl balón, když jste ho našli? Visel ze stromu, nebo byl spláchnut do řeky? Uveďte co nejvíce detailů.<br>
+Pokud byl na pohlednici uveden kód, vepište jej sem také.
+</div>
+</td>
+<td><textarea name="Desc" rows=5 cols="40"></textarea></td>
+</tr>
+<tr valign="top">
+<td>
+<span class="emph">Kontakt</span>
+<div class="desc">
+Jak se s vámi můžeme spojit? E-mailová adresa, telefon, Skype účet - uveďte cokoli, co vám vyhovuje.
+</div>
+</td>
+<td><input type="text" name="Contact" size="50"></td>
+</tr>
+<tr align="right">
+<td colspan="2"><input type="submit" name="OK" value="Odeslat"></td>
+</tr>
+</table>
+</form>
+</p>
+
+
+{% include footer %}

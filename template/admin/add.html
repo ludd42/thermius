@@ -1,0 +1,44 @@
+﻿{% include header %}
+
+<h2>{{ addedit }} Flight</h2>
+
+<form method="post" action="/admin/list">
+
+<table>
+<tr>
+<td class="emph">Balloon Name</td>
+<td><input type="text" name="Name" value="{{ flight.name }}"></td>
+</tr>
+<tr>
+<td class="emph">Date launched <div class="desc">(yyyy-mm-dd hh:mm)</div></td>
+<td><input type="text" name="Date_launch" value="{{ flight.date_launch|date:"Y-n-d H:i" }}"></td>
+</tr>
+<tr>
+<td class="emph">Launch Location</td>
+<td><input type="text" name="Location_launch" value="{{ flight.location_launch }}"></td>
+</tr>
+<tr>
+<td class="emph">Date Found<div class="desc">(yyyy-mm-dd hh:mm)</div></td>
+<td><input type="text" name="Date_landed" value="{{ flight.date_landed|date:"Y-n-d H:i"  }}"></td>
+</tr>
+<tr>
+<td class="emph">Location Found</td>
+<td><input type="text" name="Location_landed" value="{{ flight.location_landed }}"></td>
+</tr>
+<tr>
+<td class="emph">Distance</td>
+<td><input type="text" name="Distance" value="{{ flight.distance|default_if_none:"" }}"></td>
+</tr>
+<tr>
+<td class="emph">URL</td>
+<td><input type="text" name="Notes" value="{{ flight.notes }}"></td>
+</tr>
+</table>
+
+<input type="hidden" name="Key" value="{{ key }}">
+<input type="submit" name="Save" value="Save">
+<input type="submit" name="Cancel" value="Cancel">
+</form>
+
+
+{% include footer %}

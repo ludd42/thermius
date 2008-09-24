@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Thermius Administration</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" href="/static/site.css" type="text/css">
+</head>
+<body>
+<div id="container">
+<div id="navbar">
+<div id="logo">
+<a href="/admin"><img src="/static/logo.jpg" alt="Thermius - Message In A Balloon"></a>
+</div> <!-- logo -->
+<p><a href="/admin/list">List of Flights</a></p>
+<p><a href="{{ logout_url }}">Logout</a></p>
+<p>&nbsp;</p><p>&nbsp;</p>
+<img src="http://code.google.com/appengine/images/appengine-noborder-120x30.gif" alt="Powered by Google App Engine" />
+</div> <!-- navbar -->
+<div id="content">
+<h1>Message In A Balloon</h1>

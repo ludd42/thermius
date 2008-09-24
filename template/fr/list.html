@@ -1,0 +1,39 @@
+﻿{% include header %}
+
+<h2>Liste des vols</h2>
+<table>
+<tr class="emph">
+<td>Nom du ballon</td><td>Date de lancement</td><td>Lieu de lancement</td><td>Trouvé le (date)</td><td>Trouvé à (lieu)</td><td>Distance parcourue</td>
+</tr>
+{% for flight in flights %}
+<tr>
+<td>
+{% if flight.notes %}
+<a href="{{ flight.notes }}">{{ flight.name }}</a>
+{% else %}
+{{ flight.name }}
+{% endif %}
+</td>
+<td>
+{{ flight.date_launch|date:"d/n/Y H:i" }}
+</td>
+<td>
+{{ flight.location_launch }}
+</td>
+<td>
+{{ flight.date_landed|date:"d/n/Y H:i" }}
+</td>
+<td>
+{{ flight.location_landed }}
+</td>
+<td>
+	{% if flight.distance %}
+	{{flight.distance|stringformat:"s km" }}
+	{% else %}
+	{% endif %}
+</td>
+</tr>
+{% endfor %}
+</table>
+
+{% include footer %}

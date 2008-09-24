@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Thermius</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" href="/static/site.css" type="text/css">
+</head>
+<body>
+<div id="container">
+<div id="navbar">
+<div id="logo">
+<a href="/{{ lang }}/"><img src="/static/logo.jpg" alt="Thermius - Message In A Balloon"></a>
+</div> <!-- logo -->
+<p><a href="/{{ lang }}/">O solárních balónech</a></p>
+<p><a href="/{{ lang }}/list">Přehled letů</a></p>
+<p><a href="/{{ lang }}/found">Našli jste náš balón?</a></p>
+<p><a href="/{{ lang }}/contact">Kontakt</a></p>
+<p>&nbsp;</p><p>&nbsp;</p>
+<img src="http://code.google.com/appengine/images/appengine-noborder-120x30.gif" alt="Powered by Google App Engine" />
+</div> <!-- navbar -->
+<div id="content">
+<div id="langbar">
+<a href="/en/{{ this }}">english</a> | <a href="/fr/{{ this }}">français</a> | <a href="/bg/{{ this }}">български</a> | <a href="/cz/{{ this }}">česky</a>
+</div> <!-- langbar -->
+<h1>Sluneční poslíček</h1>
